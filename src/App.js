@@ -32,6 +32,8 @@ class App extends React.Component {
             </div>
           </div>
         </div>
+        <br/>
+        <br/>
         <div id="text">
           <div className="row">
             <div className="col-md-3">
@@ -39,10 +41,12 @@ class App extends React.Component {
             </div>
             <div className="col-md-6"></div>
             <div className="col-md-3">
-              <a className = "btn btn-primary" role = "button" href="https://github.com/ngaitan98/miso-4208-parcial2/tree/master/report.pdf" target="_blank">Ver Repositorio</a>
+              <a className = "btn btn-primary" role = "button" href="https://github.com/ngaitan98/miso-4208-parcial2/tree/master/report.pdf" target="_blank">Ver Reporte</a>
             </div>
           </div>
         </div>
+        <br/>
+        <br/>
         <div id="mutants">
           <table className="table table-bordered table-hover">
             <thead className="thead-dark">
