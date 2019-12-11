@@ -33,7 +33,9 @@ class App extends React.Component {
           </div>
         </div>
         <div id="text">
-
+          <h6>
+            <a href = "https://github.com/ngaitan98/miso-4208-parcial2/tree/master/" target="_blank">Ver Repositorio</a>
+          </h6>
         </div>
         <div id="mutants">
           <table className="table table-bordered table-hover">

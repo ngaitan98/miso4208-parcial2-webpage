@@ -9,7 +9,7 @@ class Mutant extends React.Component{
     }
     render(){
         return(
-            <tr className = {this.state.mutant.detectado?"table-success":"table-danger"}>
+            <tr className = {!this.state.mutant.detectado?"table-success":"table-danger"}>
                 <th scope = "row">{this.state.mutant.num}</th>
                 <td>{this.state.mutant.detectado?"Sí":"No"}</td>
                 <td>{this.state.mutant.compila?"Sí":"No"}</td>
