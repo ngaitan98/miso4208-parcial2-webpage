@@ -10,11 +10,11 @@ class App extends React.Component {
     super()
     this.state = { mutantes: [] }
   }
-  componentDidMount(){
+  componentDidMount() {
     fetch("https://mutantes.s3.amazonaws.com/mutantes.json").then(response => {
       return response.json()
     }).then(json => {
-      this.setState({mutantes:json.mutantes})
+      this.setState({ mutantes: json.mutantes })
       console.log(this.state);
     }).catch(err => { console.log(err) })
   }
@@ -33,9 +33,15 @@ class App extends React.Component {
           </div>
         </div>
         <div id="text">
-          <h6>
-            <a href = "https://github.com/ngaitan98/miso-4208-parcial2/tree/master/" target="_blank">Ver Repositorio</a>
-          </h6>
+          <div className="row">
+            <div className="col-md-3">
+              <a className = "btn btn-primary" role = "button" href="https://github.com/ngaitan98/miso-4208-parcial2/tree/master/" target="_blank">Ver Repositorio</a>
+            </div>
+            <div className="col-md-6"></div>
+            <div className="col-md-3">
+              <a className = "btn btn-primary" role = "button" href="https://github.com/ngaitan98/miso-4208-parcial2/tree/master/report.pdf" target="_blank">Ver Repositorio</a>
+            </div>
+          </div>
         </div>
         <div id="mutants">
           <table className="table table-bordered table-hover">
@@ -48,7 +54,7 @@ class App extends React.Component {
               </tr>
             </thead>
             <tbody>
-            {this.state.mutantes.map((e,i) => <Mutant data={e} key={i}/>)}
+              {this.state.mutantes.map((e, i) => <Mutant data={e} key={i} />)}
             </tbody>
           </table>
         </div>
