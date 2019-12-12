@@ -41,7 +41,7 @@ class App extends React.Component {
             </div>
             <div className="col-md-6"></div>
             <div className="col-md-3">
-              <a className = "btn btn-primary" role = "button" href="https://github.com/ngaitan98/miso-4208-parcial2/tree/master/report.pdf" target="_blank">Ver Reporte</a>
+              <a className = "btn btn-primary" role = "button" href="https://github.com/ngaitan98/miso-4208-parcial2/blob/master/README.md" target="_blank">Ver Reporte</a>
             </div>
           </div>
         </div>
